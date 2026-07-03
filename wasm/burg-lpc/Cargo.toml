@@ -1,0 +1,18 @@
+[package]
+name = "burg-lpc"
+version = "0.1.0"
+edition = "2021"
+description = "Burg LPC formant estimation for real-time vowel space analysis"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+wasm-bindgen = "0.2"
+
+[dev-dependencies]
+
+[profile.release]
+opt-level = "s"      # Optimize for small WASM size
+lto = true
+strip = "debuginfo"

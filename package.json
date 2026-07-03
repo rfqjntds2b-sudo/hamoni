@@ -1,0 +1,21 @@
+{
+  "name": "hamoni",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Real-time vocal analysis and training engine — pitch, jitter, shimmer, HNR, and exercise scoring.",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "meyda": "^5.6.3",
+    "pitchy": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "jsdom": "^29.0.0",
+    "typescript": "^5",
+    "vitest": "^4.1.0"
+  }
+}

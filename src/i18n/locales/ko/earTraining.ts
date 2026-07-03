@@ -1,0 +1,30 @@
+const earTraining = {
+  loading: '불러오는 중...',
+  sectionLabel: '청각 훈련',
+  title: '음 맞추기',
+  readyDesc: '피아노 음을 듣고 어떤 음인지 맞춰보세요.',
+  readyQuestions: '총 10문제가 출제됩니다.',
+  start: '훈련 시작하기',
+  correctCount: '{count}문제 정답',
+  listenAgainAria: '음 다시 듣기',
+  listenAgain: '탭하여 다시 듣기',
+  correct: '정답!',
+  wrong: '오답 — 정답은 {solfege} ({noteName})',
+  accuracy: '정답률 {percent}%',
+  roundCorrect: '정답',
+  roundWrong: '오답',
+  retry: '다시 하기',
+  toDashboard: '대시보드로',
+  solfege: {
+    C: '도',
+    D: '레',
+    E: '미',
+    F: '파',
+    G: '솔',
+    A: '라',
+    B: '시',
+  },
+  allSolfege: '도,레,미,파,솔,라,시',
+} as const;
+
+export default earTraining;

@@ -1,0 +1,30 @@
+const earTraining = {
+  loading: 'Loading...',
+  sectionLabel: 'Ear Training',
+  title: 'Note Match',
+  readyDesc: 'Listen to the piano note and guess which note it is.',
+  readyQuestions: '10 questions will be presented.',
+  start: 'Start',
+  correctCount: '{count} correct',
+  listenAgainAria: 'Replay note',
+  listenAgain: 'Tap to listen again',
+  correct: 'Correct!',
+  wrong: 'Wrong — answer was {solfege} ({noteName})',
+  accuracy: 'Accuracy {percent}%',
+  roundCorrect: 'correct',
+  roundWrong: 'wrong',
+  retry: 'Try Again',
+  toDashboard: 'Dashboard',
+  solfege: {
+    C: 'Do',
+    D: 'Re',
+    E: 'Mi',
+    F: 'Fa',
+    G: 'Sol',
+    A: 'La',
+    B: 'Ti',
+  },
+  allSolfege: 'Do,Re,Mi,Fa,Sol,La,Ti',
+} as const;
+
+export default earTraining;

@@ -1,0 +1,30 @@
+const earTraining = {
+  loading: '読み込み中...',
+  sectionLabel: '聴覚トレーニング',
+  title: '音当てクイズ',
+  readyDesc: 'ピアノの音を聴いて、どの音か当ててください。',
+  readyQuestions: '全10問出題されます。',
+  start: '開始する',
+  correctCount: '{count}問正解',
+  listenAgainAria: '音をもう一度聴く',
+  listenAgain: 'タップしてもう一度聴く',
+  correct: '正解！',
+  wrong: '不正解 — 正解は{solfege}（{noteName}）',
+  accuracy: '正答率 {percent}%',
+  roundCorrect: '正解',
+  roundWrong: '不正解',
+  retry: 'もう一度',
+  toDashboard: 'ダッシュボードへ',
+  solfege: {
+    C: 'ド',
+    D: 'レ',
+    E: 'ミ',
+    F: 'ファ',
+    G: 'ソ',
+    A: 'ラ',
+    B: 'シ',
+  },
+  allSolfege: 'ド,レ,ミ,ファ,ソ,ラ,シ',
+} as const;
+
+export default earTraining;
