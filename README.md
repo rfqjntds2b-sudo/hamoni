@@ -22,7 +22,7 @@ There is no application UI or backend here.
 | `src/lib/voice-profile` | Voice type classification and range profiling |
 | `src/lib/ear-training` | Ear-training quiz engine |
 | `src/lib/rhythm-training` | Rhythm pattern analysis |
-| `src/lib/audio` | Music utilities and a piano synthesizer |
+| `src/lib/audio` | Music theory utilities (note/interval/frequency conversion) |
 | `src/i18n` | Locale dictionaries and a framework-agnostic translator (`createT`) |
 | `public/worklets` | AudioWorklet processor for pitch collection |
 | `wasm/burg-lpc` | Burg-method LPC (formant estimation) |
@@ -34,6 +34,10 @@ There is no application UI or backend here.
 - **Voice quality:** AnalyserNode (FFT 4096) → self-implemented period detector with octave guard → jitter/shimmer (min 10 periods) → stability EMA (α = 0.3)
 - **Spectral:** Meyda features → HNR, noisiness, breathy/balanced/pressed state, with a passaggio (260–360 Hz) correction
 - **Vibrato:** 4–8 Hz detection with a 50-cent minimum extent
+
+> Jitter, shimmer, HNR, and F0 variability are the same acoustic features used
+> in voice-biomarker research — the acoustic markers studied for screening voice
+> and neurological disorders — here applied to real-time vocal training.
 
 ## Getting started
 
